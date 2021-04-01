@@ -2,7 +2,7 @@
 tasks:
   - name: docker_up
     command: |
-      sudo docker-up >/dev/null 2>&1
+      sudo docker-up >/dev/null 2>&1 &
       while ! docker ps; do
         sleep 1
       done

@@ -7,4 +7,4 @@ tasks:
         sleep 1
       done
       sleep 1
-      docker run randyfay/cap-add-demo getcap /bin/nc.traditional
+      docker run randyfay/cap-add-demo getcap /bin/nc.traditional 2>/dev/null

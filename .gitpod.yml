@@ -3,7 +3,8 @@ tasks:
   - name: docker_up
     command: |
       sudo docker-up >/dev/null 2>&1 &
-      while ! docker ps; do
+      while ! docker ps >dev/null 2>/dev/null; do
         sleep 1
       done
+      sleep 1
       docker run randyfay/cap-add-demo getcap /bin/nc.traditional

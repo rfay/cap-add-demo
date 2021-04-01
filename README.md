@@ -13,4 +13,10 @@ To run it and see if nc.traditional has cap_net_bind_service, `docker run -it ra
 
 Full steps to demonstrate loss of the cap_net_bind_service capacity on restore of an image in gitpod.io:
 
-1. 
+* Run this repo with gitpod: https://black-centipede-9kejnn2e.ws-dev.aledbf-killdocker.staging.gitpod-dev.com/#https://github.com/rfay/cap-add-demo
+    
+You should see "/bin/nc.traditional = cap_net_bind_service+eip", which means that the nc.traditional binary has the cap_net_bind_service capability.
+
+* Stop the gitpod instance, then restart it. 
+
+* Run this repo again with gitpod: https://black-centipede-9kejnn2e.ws-dev.aledbf-killdocker.staging.gitpod-dev.com/#https://github.com/rfay/cap-add-demo

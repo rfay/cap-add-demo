@@ -17,6 +17,6 @@ Full steps to demonstrate loss of the cap_net_bind_service capacity on restore o
     
 You should see "/bin/nc.traditional = cap_net_bind_service+eip", which means that the nc.traditional binary has the cap_net_bind_service capability.
 
-* Stop the gitpod instance, then restart it. 
+* Stop the gitpod workspace, then restart it. 
 
 * Run this repo again with gitpod: https://aledbf-killdocker.staging.gitpod-dev.com/#https://github.com/rfay/cap-add-demo
